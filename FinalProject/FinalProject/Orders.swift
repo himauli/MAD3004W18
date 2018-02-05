@@ -8,38 +8,38 @@
 
 import Foundation
 
-class Orders{
+class Orders : Customer{
+    var orderID: Int?
+    var dateCreated: String?
+    var dateShipped: String?
+    //var customerName: String?
+    var customerID: String?
+    var status: String?
+    var shippingID: String?
     
-    var orderId : Int?
-    var dateCreated : String?
-    var dateShipped : String?
-    var customerName : String?
-    var customerId : String?
-    var status : String?
-    var shippingId : String?
-    
-    init(){
-        self.orderId = 0
+    override init() {
+        super.init()
+        self.orderID = 0
         self.dateCreated = ""
         self.dateShipped = ""
-        self.customerName = ""
-        self.customerId = ""
+        //self.customerName = ""
+        self.customerID = ""
         self.status = ""
-        self.shippingId = ""
+        self.shippingID = ""
     }
     
-    init(oId: Int, oDateCreated: String, oDateShipped: String, oCustName: String, oCustId: String, oStatus: String, oShippingId: String ){
-        self.orderId = oId
+    init(oOrderID:Int,oDateCreated:String,oDateShipped:String, oCustomerName: String, oCustomerID:String, oStatus: String, oShippingID: String) {
+        self.orderID = oOrderID
         self.dateCreated = oDateCreated
         self.dateShipped = oDateShipped
-        self.customerName = oCustName
-        self.customerId = oCustId
+        self.customerName = oCustomerName
+        self.customerID = oCustomerID
         self.status = oStatus
-        self.shippingId = oShippingId
+        self.shippingID = oShippingID
     }
     
-    func placeOrder(){
+    func placeOrder() {
         
     }
-    
 }
+

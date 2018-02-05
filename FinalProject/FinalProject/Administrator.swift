@@ -8,24 +8,37 @@
 
 import Foundation
 
-class Administrator : Users{
+class Administrator: User {
     
-    var adminmnName : String?
+    var adminName : String?
     var email : String?
     
-    override init(){
+    
+    override init() {
         super.init()
-        self.adminmnName = ""
+        self.adminName = ""
         self.email = ""
-    }
-    
-    init(aName: String, aEmail: String){
-        super.init(uID: aEmail)
-        self.adminmnName = aName
-       // self.email = aEmail
-    }
-    
-    func upadteCatalog(){
         
     }
+    
+    
+    func updateCatalog() -> Bool {
+        return true
+    }
+    
+    init(aID: String, aPassword: String, aStatus: String, aName: String,aEmail: String) {
+        super.init(ID: aID, pass: aPassword, lstatus: aStatus)
+        self.adminName = aName
+        self.email = aEmail
+    }
+    
+    func  displayData1(){
+        print("ID : ",userID!)
+        print("Password : ",password!)
+        print("Login Status : ",loginStatus!)
+        print("Name : ",adminName!)
+        print("Email : ",email!)
+    }
 }
+
+

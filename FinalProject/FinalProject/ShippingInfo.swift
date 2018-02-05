@@ -8,28 +8,28 @@
 
 import Foundation
 
-class ShippingInfo{
-    
-    var shippingId : Int?
-    var shippingType : String?
-    var shippingCost : Int?
-    var shippingRegionId : Int?
+class ShippinngInfo {
+    var shippingID: Int?
+    var shippingType: String?
+    var shippingCost: Int?
+    var shippingRegionID: Int?
     
     init() {
-        self.shippingId = 0
+        self.shippingID = 0
         self.shippingType = ""
         self.shippingCost = 0
-        self.shippingRegionId = 0
+        self.shippingRegionID = 0
     }
     
-    init(sShippingId: Int, sShippingType: String, sShippingCost: Int, sShippingRegionId: Int) {
-        self.shippingId = sShippingId
-        self.shippingType = sShippingType
-        self.shippingCost = sShippingCost
-        self.shippingRegionId = sShippingRegionId
+    init(sShipID: Int, sShipType:String, sShipCost: Int, sShipRegionID: Int) {
+        self.shippingID = sShipID
+        self.shippingType = sShipType
+        self.shippingCost = sShipCost
+        self.shippingRegionID = sShipRegionID
     }
     
-    func updateShippingInfo(){
+    func updateShippingInfo() {
         
     }
 }
+

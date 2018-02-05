@@ -8,27 +8,25 @@
 
 import Foundation
 
-class Users{
-    
-    var userId : String?
+class User {
+    var userID : String?
     var password : String?
     var loginStatus : String?
     
-    init(){
-        self.userId = ""
-        self.password = ""
-        self.loginStatus = ""
+    func verifyLogin() -> Bool {
+        return true
     }
     
-    init(uID: String, uPassword: String, uLoginStatus: String){
-        self.userId = uID
-        self.password = uPassword
-        self.loginStatus = uLoginStatus
+    init() {
+        userID = "1"
+        password = ""
+        loginStatus = ""
     }
     
-    func verifyLogin() -> Bool{
-        
-        let test = true
-        return test
+    init(ID: String,pass: String, lstatus: String) {
+        self.userID = ID
+        self.password = pass
+        self.loginStatus = lstatus
     }
+    
 }

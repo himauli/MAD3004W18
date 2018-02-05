@@ -8,40 +8,41 @@
 
 import Foundation
 
-class ShoppingCart{
+class ShoppingCart {
     
-    var cartId : Int?
-    var productId : Int?
-    var quantity : Int?
-    var dateAdded : Int?
+    var cartID: Int?
+    var productID: Int?
+    var quantity: Int?
+    var dateAdded: Int?
     
-    init(){
-        self.cartId = 0
-        self.productId = 0
-        self.quantity = 0
-        self.dateAdded = 0
+    init() {
+        cartID = 0
+        productID = 0
+        quantity = 0
+        dateAdded = 0
     }
     
-    init(sID: Int, sProID: Int, sQuantity: Int, sDataAdded: Int){
-        self.cartId = sID
-        self.productId = sProID
+    init(sCartID:Int, sProductID: Int, sQuantity: Int, sDateAdded:Int) {
+        self.cartID = sCartID
+        self.productID = sProductID
         self.quantity = sQuantity
-        self.dateAdded = sDataAdded
+        self.dateAdded = sDateAdded
     }
     
-    func addCartItem(){
+    func addCartItem() {
         
     }
     
-    func updateQuantity(){
+    func updateQuantity() {
         
     }
     
-    func viewCartDetails(){
+    func viewCardDetails() {
         
     }
     
-    func checkOut(){
+    func checkOut() {
         
     }
 }
+
